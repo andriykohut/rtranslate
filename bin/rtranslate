@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require 'translate.rb'
+require 'parser.rb'
+
+parser = Parser.new
+parser.parse
+
+translation = Translation.new(TRANSLATE_URL, parser.options[:sl], parser.options[:tl], parser.options[:text])
+translation.print_translations
