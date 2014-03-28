@@ -1,4 +1,4 @@
-rtanslate
+rtranslate
 =========
 
 rtranslate - simple script for command line translation using Google Translate
