@@ -33,7 +33,7 @@ class Translation
   end
 
   def get_other_translations(data)
-    return nil if data['dict'] == nil
+    return nil if data['dict'].nil?
     result = {}
     data['dict'].each do |part_of_speech|
       part_name = part_of_speech["pos"]
